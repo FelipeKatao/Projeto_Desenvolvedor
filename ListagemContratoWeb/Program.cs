@@ -1,7 +1,14 @@
+using ListagemContratoWeb.provider;
+using ListagemContratoWeb.Repository;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<ContatosRepository>();
+var Con_sqlServer = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<CadastroContext>(options => options.UseSqlServer(Con_sqlServer));
 
 var app = builder.Build();
 
@@ -19,6 +26,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+
 
 app.MapControllerRoute(
     name: "default",

@@ -1,8 +1,25 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Contatos Juridicos";
+    List<UsuarioCadastroModel>? DadosCadastro = ViewData["DadosCadastrados"] as List<UsuarioCadastroModel>;
+    string? Var1  = ViewData["Titulo"] as string;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div>
+    <h1>Lista de contatos cadastrados</h1>
+</div>
+<div>
+    <ul class="list-group list-group-flush Light">
+        @foreach (var item in DadosCadastro){
+        <li class="list-group-item">
+            <div class="card_contact">
+            <img src="@Url.Content("~/images/user.png")" height="50px" width="50px" />
+            <div class="names_contatos">
+                <h5>@item.Nome</h5>
+                <h6 class="text-muted">@item.Email</h6>
+            </div>
+            <button class="bt_contact"></button>
+            </div>         
+        </li>
+        }
+    </ul>
 </div>

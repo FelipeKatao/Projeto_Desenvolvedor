@@ -16,3 +16,27 @@ html {
 body {
   margin-bottom: 60px;
 }
+.card_contact{
+  display: flex;
+  flex-direction: row;
+}
+.contacts_base{
+  background-color: red;
+}
+.avatar{
+  background-color: blue;
+  width: 10vh;
+  height: 10vh;
+}
+.bt_contact{
+  background-image: url("../images/contact-book.png");
+  background-size: cover;
+  width: 5vh;
+  height: 5vh;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+}
+.names_contatos{
+  margin-left: 2vh;
+}

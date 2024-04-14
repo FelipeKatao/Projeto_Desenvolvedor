@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\ListagemContratoWeb.csproj": {}
+    "D:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\ListagemContratoWeb.csproj": {}
   },
   "projects": {
-    "d:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\ListagemContratoWeb.csproj": {
+    "D:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\ListagemContratoWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\ListagemContratoWeb.csproj",
+        "projectUniqueName": "D:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\ListagemContratoWeb.csproj",
         "projectName": "ListagemContratoWeb",
-        "projectPath": "d:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\ListagemContratoWeb.csproj",
+        "projectPath": "D:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\ListagemContratoWeb.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "d:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\obj\\",
+        "outputPath": "D:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,28 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

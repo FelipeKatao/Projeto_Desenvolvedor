@@ -8,12 +8,16 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ListagemContratoWeb
 build_property.RootNamespace = ListagemContratoWeb
-build_property.ProjectDir = d:\Projeto\Nova pasta\Projeto_Desenvolvedor\ListagemContratoWeb\
+build_property.ProjectDir = D:\Projeto\Nova pasta\Projeto_Desenvolvedor\ListagemContratoWeb\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = d:\Projeto\Nova pasta\Projeto_Desenvolvedor\ListagemContratoWeb
+build_property.MSBuildProjectDirectory = D:\Projeto\Nova pasta\Projeto_Desenvolvedor\ListagemContratoWeb
 build_property._RazorSourceGeneratorDebug = 
+
+[D:/Projeto/Nova pasta/Projeto_Desenvolvedor/ListagemContratoWeb/Views/Cadastro/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Projeto/Nova pasta/Projeto_Desenvolvedor/ListagemContratoWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=

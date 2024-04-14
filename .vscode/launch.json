@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "C#: ListagemContratoWeb",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}\\ListagemContratoWeb\\ListagemContratoWeb.csproj",
+            "launchConfigurationId": "TargetFramework=;ListagemContratoWeb",
+        },        
+    ],
+    "tasks":[
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+              "watch",
+              "run"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": {
+              "kind": "build",
+              "isDefault": true
+            }
+          } 
+    ]
+}
