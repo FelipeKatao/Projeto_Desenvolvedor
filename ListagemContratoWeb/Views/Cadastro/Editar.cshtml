@@ -1,0 +1,48 @@
+@{
+    ViewData["Title"] = "Editar Contato";
+    string? Resposta = ViewData["Mensagem"] as string;
+    List<UsuarioCadastroModel>? DadosCadastro = ViewData["DadosContato"] as List<UsuarioCadastroModel>;
+
+}
+
+
+@if(Resposta == "Erro"){
+  <div class="alert alert-danger" role="alert">
+  Alteração não realizada,campos invalidos!
+</div>
+}
+@if(Resposta == "Sucesso"){
+  <div class="alert alert-success" role="alert">
+  Dados alterados com sucesso.
+</div>
+}
+
+@foreach(var item in DadosCadastro){
+<h1>Editar contato</h1>
+<form method="post"  action="/Cadastro/Alterar"  class="needs-validation" novalidate>
+    
+    <div class="form-group">
+    <label for="exampleFormControlInput1">Id contato </label>
+    <input type="number" name="IdUser_form" class="form-control" readonly  id="nomeUsuario" value="@item.CadastroId">
+    </div>
+
+    <div class="form-group">
+    <label for="exampleFormControlInput1">Nome </label>
+    <input type="text"  name="NomeUser_form" class="form-control" id="nomeUsuario" value="@item.Nome" required>
+    </div>
+
+    <br>
+    <div class="form-group">
+    <label for="exampleFormControlInput1">Email </label>
+    <input type="email" required class="form-control" id="emailUsuario" name="EmailUser_form"  value="@item.Email">
+  </div>
+
+  <br>
+    <div class="form-group">
+    <label for="exampleFormControlInput1">Data de Criação </label>
+    <input required type="date" class="form-control" id="DataUsuario" name="DataUser_form" value="@item.Data_Criacao.ToString("yyyy-MM-dd")">
+  </div>
+  <br>
+  <button class="btn btn-primary">Editar contato</button>
+</form>
+}

@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Projeto\Nova pasta\Projeto_Desenvolvedor\ListagemContratoWeb
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Projeto/Nova pasta/Projeto_Desenvolvedor/ListagemContratoWeb/Views/Cadastro/Detalhes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9cRGV0YWxoZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projeto/Nova pasta/Projeto_Desenvolvedor/ListagemContratoWeb/Views/Cadastro/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9cRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Projeto/Nova pasta/Projeto_Desenvolvedor/ListagemContratoWeb/Views/Cadastro/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

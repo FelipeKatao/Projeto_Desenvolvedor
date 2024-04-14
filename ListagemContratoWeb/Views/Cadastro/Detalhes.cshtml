@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Cadastrar novo contato";
+    int Id = Convert.ToInt32(ViewData["id"]);
+    List<UsuarioCadastroModel>? DadosCadastro = ViewData["DadosContato"] as List<UsuarioCadastroModel>;
+}
+
+<div>
+    @foreach(var item in DadosCadastro){
+    <h1>Detalhes do contato</h1>
+    <div class="ContactInfo">
+        <div class="topContact">
+            <img src="@Url.Content("~/images/user.png")" height="80px" width="80px" />
+            <h1> @item.Nome </h1>
+            <a href="/Cadastro/Editar/@item.CadastroId"><button class="bt_edit" onclick=""></button></a>
+        </div>
+        <hr>
+        <div class="DetalContact">
+            Email: <h3> @item.Email </h3> <br>
+            Data de Criação <h3> @item.Data_Criacao </h3>
+        </div>
+    </div>
+    }
+    @if(@DadosCadastro.Count == 0){
+        <div>
+            <h1>Este contato ainda não esta cadastrado</h1>
+        </div>
+    }
+
+</div>

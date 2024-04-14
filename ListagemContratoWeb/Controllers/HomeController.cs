@@ -20,10 +20,14 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         ViewData["DadosCadastrados"] = _contatosRepository.ListarContatos();
-        ViewData["Titulo"] = "Hello world C#";
         return View();
     }
 
+    public IActionResult Detalhes()
+    {
+        ViewData["DadosCadastrados"] = _contatosRepository.ListarContatos();
+        return View();
+    }
 
 
     public IActionResult Privacy()

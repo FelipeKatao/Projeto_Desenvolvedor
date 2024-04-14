@@ -37,6 +37,49 @@ body {
   background-color: transparent;
   margin-left: auto;
 }
+
+.bt_edit{
+  background-image: url("../images/edit.png");
+  background-size: cover;
+  width: 4vh;
+  height: 4vh;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+}
+
+
+
+
 .names_contatos{
   margin-left: 2vh;
+}
+
+.ContactInfo{
+  background: rgb(241,241,241);
+  background: linear-gradient(103deg, rgba(241,241,241,1) 0%, rgba(230,230,230,1) 54%, rgba(180,180,180,0.6026785714285714) 99%);
+  width: 120vh;
+  height: 60vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3vh;
+  filter: drop-shadow(1px 8px 33px #858585);
+}
+
+.topContact{
+  padding: 2vh;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.topContact h1{
+  margin-left: 2vh;
+}
+
+.DetalContact{
+  padding: 2vh;
+  
 }

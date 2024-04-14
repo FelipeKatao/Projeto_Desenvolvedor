@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8cBtCEOOzyriBizUvNcqYEqKcJJcYt1XPsD4aOKMl4s=",
+  "Hash": "d8UTKDKesfgnLqGhzILmsyb+lfkvVO44IcrARkDI/14=",
   "Source": "ListagemContratoWeb",
   "BasePath": "_content/ListagemContratoWeb",
   "Mode": "Default",
@@ -102,6 +102,23 @@
       "OriginalItemSpec": "wwwroot\\images\\contact-book.png"
     },
     {
+      "Identity": "D:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\wwwroot\\images\\edit.png",
+      "SourceId": "ListagemContratoWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\wwwroot\\",
+      "BasePath": "_content/ListagemContratoWeb",
+      "RelativePath": "images/edit.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\edit.png"
+    },
+    {
       "Identity": "D:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\wwwroot\\images\\user.png",
       "SourceId": "ListagemContratoWeb",
       "SourceType": "Discovered",
@@ -117,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\user.png"
+    },
+    {
+      "Identity": "D:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\wwwroot\\js\\editarContato.js",
+      "SourceId": "ListagemContratoWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\wwwroot\\",
+      "BasePath": "_content/ListagemContratoWeb",
+      "RelativePath": "js/editarContato.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\editarContato.js"
     },
     {
       "Identity": "D:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\wwwroot\\js\\site.js",
