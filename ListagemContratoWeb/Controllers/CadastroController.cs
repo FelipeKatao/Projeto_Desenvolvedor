@@ -16,8 +16,9 @@ public class CadastroController : Controller{
     {
         _contatosRepo = contatosRepository;
     }
-    public IActionResult Index()
-    {
+    public IActionResult Index(string status="")
+    {   
+        ViewData["Status"]= status;
         return View();
     }
 
@@ -61,6 +62,11 @@ public class CadastroController : Controller{
     public IActionResult AdicionarValor(){
         _contatosRepo.CriarNovoRegistro(Convert.ToInt16(Request.Form["IdUser_form"]),Request.Form["NomeUser_form"],Request.Form["EmailUser_form"],Convert.ToDateTime(Request.Form["DataUser_form"]));
         return RedirectToAction("Adicionar");
+    }
+
+    public IActionResult ApagarContato(int id){
+        _contatosRepo.ApagarRegistro(id);
+        return  RedirectToAction("Index",new{status="delete"});
     }
 
 }

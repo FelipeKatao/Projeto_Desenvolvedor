@@ -29,11 +29,33 @@ public class HomeController : Controller
         return View();
     }
 
-
-    public IActionResult Privacy()
+    [HttpGet]
+    [HttpPost]
+    public IActionResult Filtrar()
     {
+    if (Request.Method == "POST"){
+        DateTime Data;
+        if(Request.Form["Data_filtro"] == ""){
+            Data = DateTime.MinValue;
+        }
+        else
+        {
+            Data = Convert.ToDateTime(Request.Form["Data_filtro"]);
+        }
+        ViewData["DadosFiltrados"]= _contatosRepository.FiltrarContatos(Data,Request.Form["Nome_filtro"],Request.Form["email_filtro"]);  
         return View();
     }
+    else{
+        return View();
+    }       
+    }
+
+    public IActionResult Privacy(string status="")
+    {
+        ViewData["Status"]=status;
+        return View();
+    }
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "d8UTKDKesfgnLqGhzILmsyb+lfkvVO44IcrARkDI/14=",
+  "Hash": "bxUZYXJcLRIA21x7ksOiFwVdnVKD59LPvaT1G2ptuqg=",
   "Source": "ListagemContratoWeb",
   "BasePath": "_content/ListagemContratoWeb",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\contact-book.png"
+    },
+    {
+      "Identity": "D:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\wwwroot\\images\\delete.png",
+      "SourceId": "ListagemContratoWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\wwwroot\\",
+      "BasePath": "_content/ListagemContratoWeb",
+      "RelativePath": "images/delete.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\delete.png"
     },
     {
       "Identity": "D:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\wwwroot\\images\\edit.png",

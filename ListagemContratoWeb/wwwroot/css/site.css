@@ -37,7 +37,10 @@ body {
   background-color: transparent;
   margin-left: auto;
 }
-
+a{
+  font-style: none;
+  text-decoration: none;
+}
 .bt_edit{
   background-image: url("../images/edit.png");
   background-size: cover;
@@ -46,6 +49,22 @@ body {
   border: none;
   background-color: transparent;
   margin-left: auto;
+}
+
+.bt_delete{
+  background-image: url("../images/delete.png");
+  background-size: cover;
+  width: 4vh;
+  height: 4vh;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+  margin-left: 2vh;
+}
+
+.minBox{
+  display: flex;
+  flex-direction: row;
 }
 
 

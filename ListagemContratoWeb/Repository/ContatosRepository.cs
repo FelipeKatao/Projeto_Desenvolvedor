@@ -15,6 +15,10 @@ public class ContatosRepository
     public List<UsuarioCadastroModel> ListarContatos(){
         return _context.CadastroUsuarios.ToList();
     }
+    public List<UsuarioCadastroModel> FiltrarContatos(DateTime Data,string nome="",string Email=""){
+        return _context.CadastroUsuarios
+        .Where(item => item.Nome==nome || item.Email == Email || item.Data_Criacao == Data).ToList();
+    }
     public List<UsuarioCadastroModel> InfoContato(int Id){
         return _context.CadastroUsuarios.Where(item => item.CadastroId == Id).ToList();
     }
@@ -42,5 +46,13 @@ public class ContatosRepository
         _context.CadastroUsuarios.Add(NovoCliente);
         _context.SaveChanges();
         return true;
+    }
+
+    public bool ApagarRegistro(int id){
+        var ValorParaApagar = _context.CadastroUsuarios.Find(id);
+        _context.CadastroUsuarios.Remove(ValorParaApagar);
+        _context.SaveChanges();
+        return true;
+
     }
 }

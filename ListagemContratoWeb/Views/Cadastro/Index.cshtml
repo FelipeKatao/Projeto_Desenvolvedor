@@ -1,4 +1,10 @@
 @{
     ViewData["Title"] = "Cadastrar novo contato";
+    string? Data = ViewData["Status"] as string;
 }
 
+@if(Data == "delete"){
+    <div class="alert alert-danger" role="alert">
+        Dados Apagados com sucesso!
+    </div>
+}
