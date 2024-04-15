@@ -1,3 +1,4 @@
+
 html {
   font-size: 14px;
 }
@@ -101,4 +102,24 @@ a{
 .DetalContact{
   padding: 2vh;
   
+}
+.font_ajust{
+  font-weight:normal;
+}
+
+.font_ajust:hover{
+  font-weight:bolder;
+}
+
+.selectd{
+  font-weight:bolder;
+}
+
+.nav_color{
+  background-color: #97b7e7;
+}
+.logo_type{
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-weight: bolder;
 }

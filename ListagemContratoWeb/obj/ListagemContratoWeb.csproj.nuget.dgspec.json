@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\ListagemContratoWeb.csproj": {}
+    "d:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\ListagemContratoWeb.csproj": {}
   },
   "projects": {
-    "D:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\ListagemContratoWeb.csproj": {
+    "d:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\ListagemContratoWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\ListagemContratoWeb.csproj",
+        "projectUniqueName": "d:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\ListagemContratoWeb.csproj",
         "projectName": "ListagemContratoWeb",
-        "projectPath": "D:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\ListagemContratoWeb.csproj",
+        "projectPath": "d:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\ListagemContratoWeb.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\obj\\",
+        "outputPath": "d:\\Projeto\\Nova pasta\\Projeto_Desenvolvedor\\ListagemContratoWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -4,18 +4,18 @@
     List<UsuarioCadastroModel>? DadosCadastroFiltro = ViewData["DadosFiltrados"] as List<UsuarioCadastroModel>;
 }
 
-<h1>Filtro de dados</h1>
+<h1>Filtrar contatos</h1>
 
 <div class="minBox">
 <form method="POST" action="/Home/Filtrar" class="form-inline minBox">
 
   <div class="form-group mx-sm-3 mb-2">
-    <label  class="sr-only">Nome contato</label>
+    <label  class="sr-only">Nome</label>
     <input type="text" class="form-control" name="Nome_filtro" placeholder="Nome">
   </div>
 
     <div class="form-group mx-sm-3 mb-2">
-    <label  class="sr-only">email contato</label>
+    <label  class="sr-only">Email</label>
     <input type="email" class="form-control" name="email_filtro" placeholder="email">
   </div>
 

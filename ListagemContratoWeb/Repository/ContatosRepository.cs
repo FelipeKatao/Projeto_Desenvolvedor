@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using ListagemContratoWeb.Models;
 using ListagemContratoWeb.provider;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 namespace ListagemContratoWeb.Repository;
 
@@ -12,16 +13,31 @@ public class ContatosRepository
     {
         _context = cadastroContext;
     }
+
     public List<UsuarioCadastroModel> ListarContatos(){
         return _context.CadastroUsuarios.ToList();
     }
+
     public List<UsuarioCadastroModel> FiltrarContatos(DateTime Data,string nome="",string Email=""){
+       if(Email=="" && nome=="")
+       {
         return _context.CadastroUsuarios
-        .Where(item => item.Nome==nome || item.Email == Email || item.Data_Criacao == Data).ToList();
+        .Where(item =>  item.Data_Criacao == Data).ToList();
+       }
+
+       if(Email==""){
+         return _context.CadastroUsuarios
+        .Where(item => item.Nome.Contains(nome) ||  item.Data_Criacao == Data).ToList();
+       }
+       
+        return _context.CadastroUsuarios
+        .Where(item => item.Nome == nome ||  item.Email == Email || item.Data_Criacao == Data).ToList();
     }
+    
     public List<UsuarioCadastroModel> InfoContato(int Id){
         return _context.CadastroUsuarios.Where(item => item.CadastroId == Id).ToList();
     }
+
     public bool AlterarDados(int Id,UsuarioCadastroModel Campos){
         var CamposAlterar = _context.CadastroUsuarios.Find(Id);
         if(CamposAlterar == null){
@@ -33,6 +49,7 @@ public class ContatosRepository
         _context.SaveChanges();
         return true;
     } 
+
     public int ObterNumeroContatos(){
         return _context.CadastroUsuarios.Count();
     }

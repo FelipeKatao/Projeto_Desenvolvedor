@@ -9,6 +9,7 @@ namespace ListagemContratoWeb.Models
         public int CadastroId {get;set;}
         public string? Nome {get;set;}
         public string? Email {get;set;}
+
         public DateTime Data_Criacao {get;set;}
     }
 }
