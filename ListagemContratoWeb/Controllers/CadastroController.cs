@@ -52,4 +52,15 @@ public class CadastroController : Controller{
         return RedirectToAction("Editar", new { id = Id, mensagem = "Sucesso" });
     }
 
+    public IActionResult Adicionar(){
+        ViewData["IdMaximo"]=_contatosRepo.ObterNumeroContatos()+1;
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult AdicionarValor(){
+        _contatosRepo.CriarNovoRegistro(Convert.ToInt16(Request.Form["IdUser_form"]),Request.Form["NomeUser_form"],Request.Form["EmailUser_form"],Convert.ToDateTime(Request.Form["DataUser_form"]));
+        return RedirectToAction("Adicionar");
+    }
+
 }

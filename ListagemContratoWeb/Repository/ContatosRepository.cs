@@ -29,4 +29,18 @@ public class ContatosRepository
         _context.SaveChanges();
         return true;
     } 
+    public int ObterNumeroContatos(){
+        return _context.CadastroUsuarios.Count();
+    }
+
+    public bool CriarNovoRegistro(int id,string NomeUser,string EmailUser,DateTime DataUser){
+        var NovoCliente = new UsuarioCadastroModel{
+            Nome = NomeUser,
+            Email = EmailUser,
+            Data_Criacao = DataUser
+        };
+        _context.CadastroUsuarios.Add(NovoCliente);
+        _context.SaveChanges();
+        return true;
+    }
 }

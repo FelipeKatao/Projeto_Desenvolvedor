@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Adicionar Contato";
+    int? IdMax = Convert.ToInt32(ViewData["IdMaximo"]);
+}
+
+<h1> Adicionar contato</h1>
+<form method="post"  action="/Cadastro/AdicionarValor"  class="needs-validation" novalidate>
+    
+    <div class="form-group">
+    <label for="exampleFormControlInput1">Id contato </label>
+    <input type="number" name="IdUser_form" class="form-control" readonly  id="nomeUsuario" value="@IdMax">
+    </div>
+
+    <div class="form-group">
+    <label for="exampleFormControlInput1">Nome </label>
+    <input type="text"  name="NomeUser_form" class="form-control" id="nomeUsuario"required>
+    </div>
+
+    <br>
+    <div class="form-group">
+    <label for="exampleFormControlInput1">Email </label>
+    <input type="email" required class="form-control" id="emailUsuario" name="EmailUser_form">
+  </div>
+
+  <br>
+    <div class="form-group">
+    <label for="exampleFormControlInput1">Data de Criação </label>
+    <input required type="date" class="form-control" id="DataUsuario" name="DataUser_form">
+  </div>
+  <br>
+  <button class="btn btn-primary">Adicionar contato</button>
+</form>
